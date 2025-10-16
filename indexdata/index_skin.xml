@@ -2,22 +2,22 @@
 <krpano version="1.23.1">
 
     
-  <!-- Spot Style - Default Point Spot Style -->
+  <!-- Spot Style - stl01 -->
 
 
-  <style name="IconDefaultPointSpotStyle"
-         url="%FIRSTXML%/spots/l13_user_defaultpoint0.png"
+  <style name="Iconstl01"
+         url="%FIRSTXML%/spots/l1_user_defaultpoint0.png"
          visible="false"
          edge="center"
-         onhover="onhoverIconDefaultPointSpotStyle"
-         onout="onoutIconDefaultPointSpotStyle"
+         onhover="onhoverIconstl01"
+         onout="onoutIconstl01"
 
 
          />
-  <action name="onhoverIconDefaultPointSpotStyle">
+  <action name="onhoverIconstl01">
     showtooltip('hotspot');
   </action>
-  <action name="onoutIconDefaultPointSpotStyle">
+  <action name="onoutIconstl01">
     hideTooltip();
 
 
@@ -27,22 +27,22 @@
 
 
     
-  <!-- Spot Style - Default Point Spot Style 1 -->
+  <!-- Spot Style - stl02 -->
 
 
-  <style name="IconDefaultPointSpotStyle1"
-         url="%FIRSTXML%/spots/l13_user_defaultpoint1.png"
+  <style name="Iconstl02"
+         url="%FIRSTXML%/spots/l2_user_defaultpoint1.png"
          visible="false"
          edge="center"
-         onhover="onhoverIconDefaultPointSpotStyle1"
-         onout="onoutIconDefaultPointSpotStyle1"
+         onhover="onhoverIconstl02"
+         onout="onoutIconstl02"
 
 
          />
-  <action name="onhoverIconDefaultPointSpotStyle1">
+  <action name="onhoverIconstl02">
     showtooltip('hotspot');
   </action>
-  <action name="onoutIconDefaultPointSpotStyle1">
+  <action name="onoutIconstl02">
     hideTooltip();
 
 
@@ -52,22 +52,22 @@
 
 
     
-  <!-- Spot Style - Default Point Spot Style 2 -->
+  <!-- Spot Style - stl03 -->
 
 
-  <style name="IconDefaultPointSpotStyle2"
-         url="%FIRSTXML%/spots/l13_user_defaultpoint2.png"
+  <style name="Iconstl03"
+         url="%FIRSTXML%/spots/l3_user_defaultpoint2.png"
          visible="false"
          edge="center"
-         onhover="onhoverIconDefaultPointSpotStyle2"
-         onout="onoutIconDefaultPointSpotStyle2"
+         onhover="onhoverIconstl03"
+         onout="onoutIconstl03"
 
 
          />
-  <action name="onhoverIconDefaultPointSpotStyle2">
+  <action name="onhoverIconstl03">
     showtooltip('hotspot');
   </action>
-  <action name="onoutIconDefaultPointSpotStyle2">
+  <action name="onoutIconstl03">
     hideTooltip();
 
 
