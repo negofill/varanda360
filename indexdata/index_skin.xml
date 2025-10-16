@@ -6,7 +6,7 @@
 
 
   <style name="IconDefaultPointSpotStyle"
-         url="%FIRSTXML%/spots/_8_user_defaultpoint0.png"
+         url="%FIRSTXML%/spots/l13_user_defaultpoint0.png"
          visible="false"
          edge="center"
          onhover="onhoverIconDefaultPointSpotStyle"
@@ -31,7 +31,7 @@
 
 
   <style name="IconDefaultPointSpotStyle1"
-         url="%FIRSTXML%/spots/_2_user_defaultpoint1.png"
+         url="%FIRSTXML%/spots/l13_user_defaultpoint1.png"
          visible="false"
          edge="center"
          onhover="onhoverIconDefaultPointSpotStyle1"
@@ -56,7 +56,7 @@
 
 
   <style name="IconDefaultPointSpotStyle2"
-         url="%FIRSTXML%/spots/_13_user_defaultpoint2.png"
+         url="%FIRSTXML%/spots/l13_user_defaultpoint2.png"
          visible="false"
          edge="center"
          onhover="onhoverIconDefaultPointSpotStyle2"
@@ -68,31 +68,6 @@
     showtooltip('hotspot');
   </action>
   <action name="onoutIconDefaultPointSpotStyle2">
-    hideTooltip();
-
-
-
-  </action>
-
-
-
-    
-  <!-- Spot Style - Default Point Spot Style 3 -->
-
-
-  <style name="IconDefaultPointSpotStyle3"
-         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint3.png"
-         visible="false"
-         edge="center"
-         onhover="onhoverIconDefaultPointSpotStyle3"
-         onout="onoutIconDefaultPointSpotStyle3"
-
-
-         />
-  <action name="onhoverIconDefaultPointSpotStyle3">
-    showtooltip('hotspot');
-  </action>
-  <action name="onoutIconDefaultPointSpotStyle3">
     hideTooltip();
 
 
