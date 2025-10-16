@@ -45,27 +45,13 @@
 
 		<script type="text/javascript">
 
-			var tourlanguage;
-
 			function accessWebVr(curScene, curTime){
-
-				tourlanguage = null;
-				if (getCurrentTourPlayer())
-				{
-				  tourlanguage = getCurrentTourPlayer().get("tour_language");
-				}
 
 				unloadPlayer();
 
 			  loadPlayer(true, curScene, curTime);
 			}
 			function accessStdVr(curScene, curTime){
-
-				tourlanguage = null;
-				if (getCurrentTourPlayer())
-				{
-				  tourlanguage = getCurrentTourPlayer().get("tour_language");
-				}
 
 				unloadPlayer();
 
@@ -81,7 +67,7 @@
 						,bgcolor:"#000000"
 						,html5:"only+webgl"
 						,mobilescale:0.5
-						,vars:{skipintro:true,norotation:true,startscene:curScene,starttime:curTime,startlanguage:tourlanguage}
+						,vars:{skipintro:true,norotation:true,startscene:curScene,starttime:curTime}
 						,webglsettings:{preserveDrawingBuffer:false, depth:true, stencil:true}
 					});
 				} else {
@@ -94,7 +80,7 @@
 						,bgcolor:"#000000"
 						,html5:"only"
 						,mobilescale:0.5
-						,vars:{startscene:curScene,starttime:curTime,startlanguage:tourlanguage}
+						,vars:{startscene:curScene,starttime:curTime}
 						,webglsettings:{preserveDrawingBuffer:false, depth:true, stencil:true}
 					});
 				}
@@ -108,8 +94,6 @@
 					currentPanotourPlayer = null;
 					removepano('krpanoSWFObject');
 				}
-
-				currentPanotourPlayer = null;
 
 			}
 			var currentPanotourPlayer = null;

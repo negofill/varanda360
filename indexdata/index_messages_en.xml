@@ -10,15 +10,12 @@
 
 
   <data name="en_pano10_title"><![CDATA[Inicio]]></data>
-  <data name="en_spotpoint12_tooltip"><![CDATA[13 metros]]></data>
-  <data name="en_spotpoint50_tooltip"><![CDATA[30 metros]]></data>
-  <data name="en_spotpoint53_tooltip"><![CDATA[47 metros]]></data>
 
   <data name="en_panogroup58_title"><![CDATA[Vistas]]></data>
 
-  <data name="en_pano55_title"><![CDATA[pano_01_15_m copy]]></data>
-  <data name="en_pano56_title"><![CDATA[pano_01_30_m copy 2]]></data>
-  <data name="en_pano57_title"><![CDATA[pano_01_45_m copy 2]]></data>
+  <data name="en_pano55_title"><![CDATA[15nd]]></data>
+  <data name="en_pano56_title"><![CDATA[8nd]]></data>
+  <data name="en_pano57_title"><![CDATA[2nd]]></data>
 
 
 
@@ -26,7 +23,9 @@
 
 
   <data name="en_buttonForASinglePanotooltip"><![CDATA[]]></data>
-  <data name="en_buttonForASinglePanogroupid1020"><![CDATA[panogroup58]]></data>
+  <data name="en_buttonForASinglePanopanoid1100"><![CDATA[pano57]]></data>
+  <data name="en_buttonForASinglePanopanoid1111"><![CDATA[pano56]]></data>
+  <data name="en_buttonForASinglePanopanoid1122"><![CDATA[pano55]]></data>
   <data name="en_logowebsiteurl"><![CDATA[https://construtorasantamaria.com.br/]]></data>
   <data name="en_logo1websiteurl"><![CDATA[https://construtorasantamaria.com.br/empreendimentos/acqualina-residence/]]></data>
 
