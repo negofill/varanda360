@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.23.1">
+
+    
+  <!-- Spot Style - spot01 -->
+
+
+  <style name="Iconspot01"
+         url="%FIRSTXML%/spots/_2nd_user_defaultpoint0.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconspot01"
+         onout="onoutIconspot01"
+
+
+         />
+  <action name="onhoverIconspot01">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconspot01">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - spot02 -->
+
+
+  <style name="Iconspot02"
+         url="%FIRSTXML%/spots/_8nd_user_defaultpoint1.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconspot02"
+         onout="onoutIconspot02"
+
+
+         />
+  <action name="onhoverIconspot02">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconspot02">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - spot03 -->
+
+
+  <style name="Iconspot03"
+         url="%FIRSTXML%/spots/_13nd_user_defaultpoint2.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconspot03"
+         onout="onoutIconspot03"
+
+
+         />
+  <action name="onhoverIconspot03">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconspot03">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+<!-- ********** -->
+<!-- Button - Scene specific -->
+<!-- id : buttonForASinglePano -->
+<!-- ********** -->
+
+  <layer name="buttonForASinglePano"
+         keep="true"
+         url="%FIRSTXML%/graphics/buttonforasinglepano/esquerda_verde.png"
+         align="bottomleft"
+         x="10"
+         y="10"
+         zorder="1"
+         visible="false"
+         onclick="buttonForASinglePanoOnClick"
+         alpha="0.7"
+         onout="tween(scale, 1.0,0.5,easeOutQuad);tween(alpha,0.7,0.5,easeOutQuad);"
+         onover="tween(scale, 1.2,0.5,easeOutQuad);tween(alpha,1.0,0.5,easeOutQuad);set(layer[buttonForASinglePanoover].visible, true);set(layer[buttonForASinglePano].visible, false);"
+         width="35"
+         height="prop"
+         />
+
+
+<layer name="buttonForASinglePanoover"
+         keep="true"
+         url="%FIRSTXML%/graphics/buttonforasinglepano/esquerda.png"
+         align="bottomleft"
+         x="10"
+         y="10"
+         zorder="1"
+         visible="false"
+         onclick="buttonForASinglePanoOnClick"
+         alpha="0.7"
+         onout="tween(scale, 1.0,0.5,easeOutQuad);tween(alpha,0.7,0.5,easeOutQuad);set(layer[buttonForASinglePano].visible, true);set(layer[buttonForASinglePanoover].visible, false);"
+         onover="tween(scale, 1.2,0.5,easeOutQuad);tween(alpha,1.0,0.5,easeOutQuad);"
+         width="35"
+         height="prop"
+         />
+
+
+  <action name="buttonForASinglePanoOnClick">hideTooltip();zoomto(get(panoview.fov),smooth(400,20,100));
+          mainloadscene(pano10);
+      lookto(get(panoview.h), get(panoview.v), get(panoview.fov), smooth(100,50,20));
+    
+
+
+  </action>
+
+  <events name="buttonForASinglePanoevents"
+    onTourStart="showbuttonForASinglePano();"
+
+    onPanoStart="showbuttonForASinglePano();"
+
+    keep="true" />
+  <action name="hidebuttonForASinglePano">set(layer[buttonForASinglePano].visible, false);</action>
+  <action name="showbuttonForASinglePano">
+    set(display_buttonForASinglePano, false);
+
+    set(currentgroup_buttonForASinglePano, get(scene[get(xml.scene)].group));
+    if (currentgroup_buttonForASinglePano == panogroup58, set(display_buttonForASinglePano, true); );
+
+    set(layer[buttonForASinglePanoover].visible, false);
+
+    if (display_buttonForASinglePano,
+      set(layer[buttonForASinglePano].visible, true);
+    ,
+      hidebuttonForASinglePano();
+    );
+  </action>
+
+
+
+<!-- ********** -->
+<!-- Header -->
+<!-- id : header -->
+<!-- ********** -->
+
+  <layer name="header"
+         keep="true"
+         type="container"
+         bgcolor="0x000000"
+         bgalpha="0.90000762951094837"
+         align="top"
+         x="0"
+         y="0"
+         zorder="2"
+         enabled="false"
+         capture="true"
+         visible="false"
+         height="44"
+         width="100%"
+         accuracy="1"
+         />
+
+  <events name="headerevents"
+    onTourStart="showheader();"
+    keep="true" />
+
+  <action name="showheader">
+    set(layer[header].visible, true);
+  </action>
+
+<!-- ********** -->
+<!-- Logo -->
+<!-- id : logo -->
+<!-- ********** -->
+
+
+  <layer align="topleft"
+         x="10"
+         y="0"
+         zorder="3"
+         name="logo"
+         keep="true"
+         visible="false"
+         capture="false"
+
+         url="%FIRSTXML%/graphics/logo/logofundoblack-removebg-preview.png" 
+         onclick="
+getmessage(urltoopen,logowebsiteurl);openurl(get(urltoopen),_blank);
+"
+
+         width="100"
+         height="prop"
+
+         />
+
+  <events name="logoevents" 
+    onTourStart="showlogo();"
+    keep="true" />
+
+  <action name="hidelogo">
+    set(layer[logo].visible, false);
+  </action>
+  <action name="showlogo">
+      set(layer[logo].visible, true);
+  </action>
+
+
+
+
+
+<!-- ********** -->
+<!-- Logo1 -->
+<!-- id : logo1 -->
+<!-- ********** -->
+
+
+  <layer align="topright"
+         x="10"
+         y="0"
+         zorder="4"
+         name="logo1"
+         keep="true"
+         visible="false"
+         capture="false"
+
+         url="%FIRSTXML%/graphics/logo1/marca.png" 
+         onclick="
+getmessage(urltoopen,logo1websiteurl);openurl(get(urltoopen),_blank);
+"
+
+         width="120"
+         height="prop"
+
+         />
+
+  <events name="logo1events" 
+    onTourStart="showlogo1();"
+    keep="true" />
+
+  <action name="hidelogo1">
+    set(layer[logo1].visible, false);
+  </action>
+  <action name="showlogo1">
+      set(layer[logo1].visible, true);
+  </action>
+
+
+
+
+
+</krpano>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.23.1">
+
+    
+  <!-- Spot Style - spot01 -->
+
+
+  <style name="Iconspot01"
+         url="%FIRSTXML%/spots/_2nd_user_defaultpoint0.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconspot01"
+         onout="onoutIconspot01"
+
+
+         />
+  <action name="onhoverIconspot01">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconspot01">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - spot02 -->
+
+
+  <style name="Iconspot02"
+         url="%FIRSTXML%/spots/_8nd_user_defaultpoint1.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconspot02"
+         onout="onoutIconspot02"
+
+
+         />
+  <action name="onhoverIconspot02">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconspot02">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - spot03 -->
+
+
+  <style name="Iconspot03"
+         url="%FIRSTXML%/spots/_13nd_user_defaultpoint2.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconspot03"
+         onout="onoutIconspot03"
+
+
+         />
+  <action name="onhoverIconspot03">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconspot03">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+<!-- ********** -->
+<!-- Logo -->
+<!-- id : logo -->
+<!-- ********** -->
+
+
+
+
+
+<!-- ********** -->
+<!-- Logo1 -->
+<!-- id : logo1 -->
+<!-- ********** -->
+
+
+
+
+
+</krpano>
